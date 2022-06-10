@@ -1,0 +1,181 @@
+ErrorDocument 403 /page9593057.html
+ErrorDocument 404 /page9593057.html
+
+DirectoryIndex page26387564.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://xn--e1afhkdbcgfp\.xn--p1ai/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =https
+RewriteCond %{HTTP_HOST} ^www\.xn--e1afhkdbcgfp.xn--p1ai [NC]
+RewriteRule ^(.*)$ https://xn--e1afhkdbcgfp\.xn--p1ai/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^catalog$ page10764915.html [NC]
+RewriteRule ^catalog/$ page10764915.html [NC]
+
+RewriteRule ^nikaten_3$ page652500.html [NC]
+RewriteRule ^nikaten_3/$ page652500.html [NC]
+
+RewriteRule ^gj-catalog-bokal$ page1685210.html [NC]
+RewriteRule ^gj-catalog-bokal/$ page1685210.html [NC]
+
+RewriteRule ^makulatura$ page1247474.html [NC]
+RewriteRule ^makulatura/$ page1247474.html [NC]
+
+RewriteRule ^gj-catalog-sahar$ page1685658.html [NC]
+RewriteRule ^gj-catalog-sahar/$ page1685658.html [NC]
+
+RewriteRule ^header$ page1920022.html [NC]
+RewriteRule ^header/$ page1920022.html [NC]
+
+RewriteRule ^gj-catalog-lotki$ page1685388.html [NC]
+RewriteRule ^gj-catalog-lotki/$ page1685388.html [NC]
+
+RewriteRule ^gj-catalog-salat$ page1685428.html [NC]
+RewriteRule ^gj-catalog-salat/$ page1685428.html [NC]
+
+RewriteRule ^servizy-stolovyye$ page1395100.html [NC]
+RewriteRule ^servizy-stolovyye/$ page1395100.html [NC]
+
+RewriteRule ^bravo$ page26899133.html [NC]
+RewriteRule ^bravo/$ page26899133.html [NC]
+
+RewriteRule ^csm$ page27069724.html [NC]
+RewriteRule ^csm/$ page27069724.html [NC]
+
+RewriteRule ^gj-catalog-serviz$ page1685544.html [NC]
+RewriteRule ^gj-catalog-serviz/$ page1685544.html [NC]
+
+RewriteRule ^gj-catalog-sousniki$ page1408898.html [NC]
+RewriteRule ^gj-catalog-sousniki/$ page1408898.html [NC]
+
+RewriteRule ^gj-catalog-tarelki$ page1685602.html [NC]
+RewriteRule ^gj-catalog-tarelki/$ page1685602.html [NC]
+
+RewriteRule ^gj-catalog-pari$ page1685694.html [NC]
+RewriteRule ^gj-catalog-pari/$ page1685694.html [NC]
+
+RewriteRule ^gj-catalog-vazi$ page1685722.html [NC]
+RewriteRule ^gj-catalog-vazi/$ page1685722.html [NC]
+
+RewriteRule ^gj-catalog-tarelki-dekorativnyye$ page1291872.html [NC]
+RewriteRule ^gj-catalog-tarelki-dekorativnyye/$ page1291872.html [NC]
+
+RewriteRule ^gj-catalog-kuvshiny$ page1685788.html [NC]
+RewriteRule ^gj-catalog-kuvshiny/$ page1685788.html [NC]
+
+RewriteRule ^gj-catalog-podnosy$ page1395220.html [NC]
+RewriteRule ^gj-catalog-podnosy/$ page1395220.html [NC]
+
+RewriteRule ^gj-catalog-maslenki$ page1393228.html [NC]
+RewriteRule ^gj-catalog-maslenki/$ page1393228.html [NC]
+
+RewriteRule ^gj-catalog-frukt$ page1685750.html [NC]
+RewriteRule ^gj-catalog-frukt/$ page1685750.html [NC]
+
+RewriteRule ^suvenir$ page1409158.html [NC]
+RewriteRule ^suvenir/$ page1409158.html [NC]
+
+RewriteRule ^uslovia-raboti-dogovor$ page1372954.html [NC]
+RewriteRule ^uslovia-raboti-dogovor/$ page1372954.html [NC]
+
+RewriteRule ^uslovia-raboti-skidki$ page1393936.html [NC]
+RewriteRule ^uslovia-raboti-skidki/$ page1393936.html [NC]
+
+RewriteRule ^uslovia-raboti-oplata$ page1373390.html [NC]
+RewriteRule ^uslovia-raboti-oplata/$ page1373390.html [NC]
+
+RewriteRule ^uslovia-raboti-dostavka$ page1393478.html [NC]
+RewriteRule ^uslovia-raboti-dostavka/$ page1393478.html [NC]
+
+RewriteRule ^uslovia-raboti-poluchenie-tovara$ page1373714.html [NC]
+RewriteRule ^uslovia-raboti-poluchenie-tovara/$ page1373714.html [NC]
+
+RewriteRule ^uslovia-raboti-vozvrat$ page1373574.html [NC]
+RewriteRule ^uslovia-raboti-vozvrat/$ page1373574.html [NC]
+
+RewriteRule ^manufaktura-istoriya$ page1393944.html [NC]
+RewriteRule ^manufaktura-istoriya/$ page1393944.html [NC]
+
+RewriteRule ^manufaktura-komanda$ page1393992.html [NC]
+RewriteRule ^manufaktura-komanda/$ page1393992.html [NC]
+
+RewriteRule ^kontakty$ page1394064.html [NC]
+RewriteRule ^kontakty/$ page1394064.html [NC]
+
+RewriteRule ^blog$ page1862617.html [NC]
+RewriteRule ^blog/$ page1862617.html [NC]
+
+RewriteRule ^kupit_posudu_gzhel$ page1862722.html [NC]
+RewriteRule ^kupit_posudu_gzhel/$ page1862722.html [NC]
+
+RewriteRule ^kruzhki-gzhel$ page1882352.html [NC]
+RewriteRule ^kruzhki-gzhel/$ page1882352.html [NC]
+
+RewriteRule ^kupit-suveniry-gzhel$ page1898139.html [NC]
+RewriteRule ^kupit-suveniry-gzhel/$ page1898139.html [NC]
+
+RewriteRule ^bokaly-gzhel$ page1898386.html [NC]
+RewriteRule ^bokaly-gzhel/$ page1898386.html [NC]
+
+RewriteRule ^posuda-gzhel-kupit$ page2332282.html [NC]
+RewriteRule ^posuda-gzhel-kupit/$ page2332282.html [NC]
+
+RewriteRule ^gzhel-optom$ page2332574.html [NC]
+RewriteRule ^gzhel-optom/$ page2332574.html [NC]
+
+RewriteRule ^servizy-gzhel$ page2522684.html [NC]
+RewriteRule ^servizy-gzhel/$ page2522684.html [NC]
+
+RewriteRule ^kupit-chaynyy-serviz$ page2522696.html [NC]
+RewriteRule ^kupit-chaynyy-serviz/$ page2522696.html [NC]
+
+RewriteRule ^price$ page2741133.html [NC]
+RewriteRule ^price/$ page2741133.html [NC]
+
+RewriteRule ^conditions$ page2741142.html [NC]
+RewriteRule ^conditions/$ page2741142.html [NC]
+
+RewriteRule ^contacts$ page2741143.html [NC]
+RewriteRule ^contacts/$ page2741143.html [NC]
+
+RewriteRule ^priyem-makulatury-v-moskve$ page2627185.html [NC]
+RewriteRule ^priyem-makulatury-v-moskve/$ page2627185.html [NC]
+
+RewriteRule ^sdat-makulaturu-v-moskve$ page2633026.html [NC]
+RewriteRule ^sdat-makulaturu-v-moskve/$ page2633026.html [NC]
+
+RewriteRule ^vyvoz-makulatury-moskva$ page2633290.html [NC]
+RewriteRule ^vyvoz-makulatury-moskva/$ page2633290.html [NC]
+
+RewriteRule ^wtf404$ page9593057.html [NC]
+RewriteRule ^wtf404/$ page9593057.html [NC]
+
+RewriteRule ^premialnye-zhidkosti-dlya-vejpa$ page10766044.html [NC]
+RewriteRule ^premialnye-zhidkosti-dlya-vejpa/$ page10766044.html [NC]
+
+RewriteRule ^solevye-zhidkosti-dlya-vejpa$ page10766355.html [NC]
+RewriteRule ^solevye-zhidkosti-dlya-vejpa/$ page10766355.html [NC]
+
+RewriteRule ^zhidkosti-dlya-vejpa-n-kazhdyj-den$ page10766511.html [NC]
+RewriteRule ^zhidkosti-dlya-vejpa-n-kazhdyj-den/$ page10766511.html [NC]
+
+RewriteRule ^mcplace$ page27569860.html [NC]
+RewriteRule ^mcplace/$ page27569860.html [NC]
+
+RewriteRule ^mcreviews$ page27578844.html [NC]
+RewriteRule ^mcreviews/$ page27578844.html [NC]
+
+RewriteRule ^mcinstruction$ page27579680.html [NC]
+RewriteRule ^mcinstruction/$ page27579680.html [NC]
+
+RewriteRule ^in$ page28109869.html [NC]
+RewriteRule ^in/$ page28109869.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild6136-3335-4339-a633-326531313561/Orion_fav.ico [R=302,L]
+

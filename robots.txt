@@ -1,0 +1,18 @@
+User-Agent: *
+Disallow: /page9593057.html
+Disallow: /wtf404
+Disallow: /tilda/form*
+Disallow: /tilda/rec*
+Disallow: /tilda/click*
+Disallow: /tilda/scroll*
+Disallow: /tilda/popup*
+Disallow: /tilda/cart*
+Disallow: /tilda/product*
+Disallow: /tilda/event*
+Disallow: /*_escaped_fragment_*
+Disallow:
+
+
+Sitemap: https://xn--e1afhkdbcgfp.xn--p1ai/sitemap.xml
+Sitemap: https://xn--e1afhkdbcgfp.xn--p1ai/sitemap-store.xml
+Host: https://xn--e1afhkdbcgfp.xn--p1ai
