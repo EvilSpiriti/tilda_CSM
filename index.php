@@ -669,10 +669,10 @@
                                 <div class="t702__title t-title t-title_xxs" style=""> Записаться на приём
                                 </div>
                             </div>
-                            <form id="form439924279" name='form439924279' role="form" action='' method='POST'
+                            <form id="form439924279" name='form439924279' role="form" action='send.php' method='POST'
                                 data-formactiontype="2" data-inputbox=".t-input-group"
                                 class="t-form js-form-proccess t-form_inputs-total_2 "
-                                data-success-callback="t702_onSuccess"> <input type="hidden" name="formservices[]"
+                                data-success-callback="t702_onSuccess" action="send.php"> <input type="hidden" name="formservices[]"
                                     value="24e8ccb0d9d107b7201a289fe7ecfcf7" class="js-formaction-services">
                                 <div class="js-successbox t-form__successbox t-text t-text_md" style="display:none;">
                                 </div>
@@ -724,6 +724,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <input type="text" name="Service" id="serv_info" style="display: none;">
                             </form>
                             <style>
                                 #rec439924279 input::-webkit-input-placeholder {
@@ -1296,10 +1297,10 @@
                         
                         <div class="t-col t-col_10 t-prefix_1 t431__tdscale_1 t-text t-text_sm t-align_left t431__mobilescroll">
         <div class="t431__wrapper-for-mobile">
-            <div class="t431__table-wrapper" data-auto-correct-mobile-width="false">
+            <div class="t431__table-wrapper" data-auto-correct-mobile-width="true">
                 <table class="t431__table " data-table-width="10%;50%;20%;20%" width="100%">
                     
-                    <tbody class="t431__tbody">
+                    <tbod class="t431__tbody">
                     <?php 
                                 if (($handle = fopen("prays_kt_na_sayt.csv", "r")) !== FALSE) {
                                     while (($data = fgetcsv($handle, null )) !== FALSE) {?>
@@ -1308,7 +1309,7 @@
                                             <td class="t431__td t-text" width="50%"><?=$data[0];?></td>
                                             <td class="t431__td t-text" width="20%"><?=$data[1];?> руб.</td>
                                             <td class="t431__td t-text" width="20%">
-                                                <div class="t431__btnwrapper"><a href="http://tilda.cc" class="t-btn t-btn_sm">
+                                                <div class="t431__btnwrapper"><a href="#popup:subscribe" class="t-btn t-btn_sm" id="submit_form_info"  onclick="sub_form_info()">
                                                         <table style="width:100%; height:100%">
                                                             <tbody>
                                                                 <tr>
@@ -1335,7 +1336,7 @@
                                     echo "</pre>";
                                 }
                             ?>
-                    </tbody>
+                    </tbod>
                 </table>
             </div>
         </div>
@@ -1369,9 +1370,24 @@
         .table-data {
             display: none;
         }
+        @media screen and (max-width:960px) {
+            .t431__table>.t431__tbody, .t431__table>.t431__thead{
+                display: revert !important;
+            }
+        }
     </style>
 
     <script>
+        function sub_form_info(){
+            let row = event.path[7];
+            
+            let name = $(row).find('.t431__td.t-text')[1].innerText;
+
+            document.querySelector('#serv_info').value = name;
+
+            //console.log(name);
+        }
+
         $(document).ready(function () {
             var tableID = '#rec437008948';
             $(tableID + ' .t431__tbody>tr').addClass('table-data');
